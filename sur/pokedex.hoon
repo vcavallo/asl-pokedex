@@ -1,13 +1,12 @@
-/-  json
 |%
-+$  mons  (map @tas @t)  :: make json
++$  mons  (map mon json)  :: make json
 +$  mon   @tas
 +$  action
   $%  [%lookup =mon]
       [%not-real @]
   ==
 +$  update
-  $%  [%lookup =mon]
+  $%  [%lookup json]
       [%not-real @]
   ==
 --
